@@ -1,0 +1,8 @@
+banner1:https://images2.alphacoders.com/778/77840.jpg
+banner2:http://www.zdqx.com/pcbz/90038_3.html
+banner3:http://up.deskcity.org/pic_source/70/1c/d7/701cd726ff261554d3085854963193b3.jpg
+banner4:https://s1.ax1x.com/2022/06/05/XdRxoR.jpg
+banner5:http://up.deskcity.org/pic_source/89/11/97/891197b8641ca22b671f58c7a8021016.jpg
+pic1:https://mp.ofweek.com/Upload/News/Img/member48869/202205/wx_article__a64a1232d7f42949ff4e578523ce68c5.jpg
+pic2:https://pic1.zhimg.com/v2-b9a7f7735dbb8456b6f81d905745e953_1440w.jpg?source=172ae18b
+pic3:https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2022/05/23/aws-on-premise-to-aws-backup-hybrid-2.png
