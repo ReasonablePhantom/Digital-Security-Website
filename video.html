@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Recovery Planning-JunZheng Lyu(Bruce)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="w header">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="nav-meau">
+                    <li><a href="Index.html">Main Page</a></li>
+                    <li><a href="blog.html" class="active">Info Page</a></li>
+                    <li><a href="video.html" >Related Video</a></li>
+
+                    <li><a href="faq.html">Q&A</a></li>
+                    <li><a href="about.html">Contact US</a></li>
+                </ul>
+            </nav>
+            <!--
+            <ul class="user">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+            -->
+        </div>
+    </header>
+
+    <div class="header-bg">
+        <img src="images/banner3.jpg" alt="">
+        <div class="title">
+            Video
+        </div>
+    </div>
+
+
+    <div class="content w py-3 contentVideo">
+        <div class="content-l">
+            <h4 class="mb-3">Video</h4>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card item" data-src="">
+                        <div class="pic">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/Ipf3nXsgC3M/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="card-body p-2">
+                            <h5 class="card-title">7 Steps to Building a Disaster Recovery Plan</h5>
+                            <p class="card-text">https://www.youtube.com/watch?v=Ipf3nXsgC3M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card item" data-src="">
+                        <div class="pic">
+                            <img class="card-img-top" src="https://i.ytimg.com/vi/Ipf3nXsgC3M/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="card-body p-2">
+                            <h5 class="card-title">7 Steps to Building a Disaster Recovery Plan</h5>
+                            <p class="card-text">https://www.youtube.com/watch?v=Ipf3nXsgC3M</p>
+                        </div>
+                    </div>
+                </div>
+
+<!--
+视频元素
+--->
+
+
+            </div>
+            <div class="content-r">
+                <h4 class="mb-3">You can also Search on Google!</h4>
+
+
+
+
+                <span style="font-size:18px;"><form method="get" action="http://www.google.com/search" target="_blank">
+     <input name="q" size="40" maxlength="255" type="text" /> <input name="btnG" value="Google Search" type="submit" />
+</form>
+
+<!--
+调用google search
+--->
+
+
+<!--
+                <div class="search mb-3 row">
+                    <div class="col-9 pr-0">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                    </div>
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-dark">Search</button>
+                    </div>
+                </div>--->
+                <h4 class="mb-3">Classification Tags</h4>
+                <!--
+                <div class="tags mb-3">
+                    <span class="badge badge-dark"></span>
+                    <span class="badge badge-dark"></span>
+                    <span class="badge badge-dark"></span>
+                    <span class="badge badge-dark"></span>
+                    <span class="badge badge-dark"></span>
+                    <span class="badge badge-dark"></span>
+                </div>
+                -->
+                <h4 class="mb-3">Website-Info</h4>
+                <footer class="footer shadow-lg">
+                    <p>Friendly Tips</p>
+                    <p>Attack and Defense on Internet </p>
+                    <p>Unknown Domain Search</p>
+                    <p>
+                        <a href="https://domains.google.com/registrar/search?hl=zh-CN" target="_blank" rel="noreferrer">Google Domain Can be use for check Information about unknown domain server</a>
+                        <!--
+                        <a href="#">Google</a>
+                         <a href="#">Google</a>
+                         <a href="#">Google</a>
+                         -->
+                    </p>
+                </footer>
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+    <!-- 浮动播放器 -->
+    <div class="fixedVideo">
+        <div class="videoBox">
+            <video src="" controls></video>
+            <button class="btn-close">X</button>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var videoSrc = [
+            'images/2.mp4',
+            'images/2.mp4',
+            'images/2.mp4',
+            'images/2.mp4'
+        ]
+        $.each(videoSrc, (index, item) => {
+            $('.contentVideo .item').eq(index).attr('data-src', item)
+        })
+
+        $('.btn-close').on('click', function () {
+            $('.fixedVideo').fadeOut()
+        })
+
+        $('.contentVideo .item').on('click', function () {
+            $('.fixedVideo').fadeIn()
+            $('.fixedVideo video').attr('src', $(this).attr('data-src'))
+        })
+    </script>
+</body>
+
+</html>

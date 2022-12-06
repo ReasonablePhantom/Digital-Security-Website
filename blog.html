@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Recovery Planning-JunZheng Lyu(Bruce)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="w header">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="nav-meau">
+                    <li><a href="Index.html">Main Page</a></li>
+                    <li><a href="blog.html" class="active">Info Page</a></li>
+                    <li><a href="video.html" >Related Video</a></li>
+
+                    <li><a href="faq.html">Q&A</a></li>
+                    <li><a href="about.html">Contact US</a></li>
+                </ul>
+            </nav>
+            <!--
+            <ul class="user">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+            -->
+        </div>
+    </header>
+
+    <div class="header-bg">
+        <img src="images/banner3.jpg" alt="">
+        <div class="title">
+            Forums
+        </div>
+    </div>
+
+
+    <div class="content w py-3 contentBlog">
+        <div class="content-l">
+            <h4 class="mb-3">Info List</h4>
+            <div class="card mb-3 box">
+                <a href="blog-details1.html">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <div class="pic">
+                                <img src="https://www.battlegroundps.org/wp-content/uploads/2021/05/Recovery-Plan-image.png" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Define the goals of the recovery plan</h5>
+                                <p class="card-text">
+                                    Define recovery objectives and manage all assets and
+                                    facilities in an integrated manner. Select the
+                                    corresponding recovery method. Prioritize the protection
+                                    of critical operators to prevent "gaps" in critical operations.
+                                </p>
+                                <p class="card-text"><small class="text-white">Posted on 11-29-2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               <!--
+               上面是context-1的内容标题和介绍
+               --->
+            </div>
+            <div class="card mb-3 box">
+                <a href="blog-details2.html">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <div class="pic">
+                                <img src="data:image/png;base64,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" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Create the recovery system</h5>
+                                <p class="card-text">
+                                    Creating a recovery system should be designed for the specific
+                                    target type and backup method. And use multi-factor authorization
+                                    or multi-step identity verification to prevent hacking. When you
+                                    have the ability, choose multiple locations for redundant backups
+                                    to each other.
+                                </p>
+                                <p class="card-text"><small class="text-white">Posted on 11-29-2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               
+            </div>
+            <!--
+            上面是context-2的内容标题和介绍
+            --->
+            <div class="card mb-3 box">
+                <a href="blog-details3.html">
+                    <div class="row no-gutters">
+                        <div class="col-4">
+                            <div class="pic">
+                                <img src="https://www.recordnations.com/wp-content/uploads/2018/08/bigstock-drp-disaster-recovery-plan-cri-99518108.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Perform relevant tests on the entire recovery plan</h5>
+                                <p class="card-text">
+                                    Conducting the appropriate walkthroughs before officially
+                                    putting this recovery plan into use will help identify its
+                                    current vulnerabilities and flaws and fix them. Even after
+                                    the recovery plan is officially operational, it will need
+                                    to be maintained at a fixed frequency. This is to prevent
+                                    all kinds of failures due to slack personnel and aging hardware.
+                                </p>
+                                <p class="card-text"><small class="text-white">Posted on 11-29-2022</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               
+            </div>
+
+            <nav aria-label="...">
+                <ul class="pagination">
+
+                    <!--
+
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+
+                    --->
+
+
+
+                    <li class="page-item"><a class="page-link" href="MVangsycha.html">1</a></li>
+                    <li class="page-item active">
+
+                    <li class="page-item"><a class="page-link" href="TRoman.html">2</a></li>
+
+                    <a class="page-link " href="#">3 <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                    <!--
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                    --->
+
+                </ul>
+            </nav>
+            <!--
+            上面是Recovery Information的内容标题和介绍
+            --->
+
+
+        <!--
+        </div>
+        <div class="content-r">
+            <h4 class="mb-3">Search</h4>
+            <div class="search mb-3 row">
+                <div class="col-9 pr-0">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                </div>
+                <div class="col-3 ">
+                    <button type="button" class="btn btn-dark">Search</button>
+                </div>
+            </div>
+
+            --->
+            <h4 class="mb-3">Classification Tags</h4>
+            <!--
+            <div class="tags mb-3">
+                <span class="badge badge-dark"></span>
+                <span class="badge badge-dark"></span>
+                <span class="badge badge-dark"></span>
+                <span class="badge badge-dark"></span>
+                <span class="badge badge-dark"></span>
+                <span class="badge badge-dark"></span>
+            </div>
+            -->
+            <h4 class="mb-3">Website-Info</h4>
+            <footer class="footer shadow-lg">
+                <p>Friendly Tips</p>
+                <p>Attack and Defense on Internet </p>
+                <p>Unknown Domain Search</p>
+                <p>
+                    <a href="https://domains.google.com/registrar/search?hl=zh-CN"target="_blank" rel="noreferrer">Google Domain Can be use for check Information about unknown domain server</a>
+                    <!--
+                    <a href="#">Google</a>
+                     <a href="#">Google</a>
+                     <a href="#">Google</a>
+                     -->
+                </p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
